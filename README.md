@@ -1,16 +1,173 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Seller Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1fb6ea 0%, #3f6fd8 45%, #4b52c4 100%);
+      color: white;
+    }
 
-<!--
-**ShafcoDesign/shafcodesign** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    .glass {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
 
-Here are some ideas to get you started:
+    .btn-link:hover {
+      transform: translateY(-3px);
+      transition: 0.3s ease;
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    .gallery img {
+      transition: 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: -200px;
+      left: -200px;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -250px;
+      right: -250px;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%);
+      border-radius: 50%;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="max-w-3xl mx-auto px-5 py-10 relative z-10">
+
+    <!-- PROFILE -->
+    <div class="text-center mb-8">
+      <img 
+        src="https://www.image2url.com/r2/default/images/1779770949422-6f4065d5-f8e5-468e-b83e-d0a3c1b76c9b.jpg" 
+        alt="Logo Toko"
+        class="w-36 h-36 rounded-full mx-auto border-4 border-blue-100 shadow-2xl object-cover"
+      />
+
+      <h1 class="text-3xl font-bold mt-5">SHAF.CO DESIGN </h1>
+      <p class="text-blue-100 mt-2">
+        Seller Online • Shopee • Tokopedia • TikTok Shop • WhatsApp • Facebook
+      </p>
+    </div>
+
+    <!-- LINK BUTTONS -->
+    <div class="space-y-4">
+
+      <a href="https://s.shopee.co.id/6Ai9NwK0uM" target="_blank"
+        class="btn-link glass flex items-center justify-between p-5 rounded-2xl shadow-lg">
+        <div>
+          <h2 class="font-semibold text-lg">Shopee Store</h2>
+          <p class="text-sm text-blue-100">Belanja langsung di Shopee</p>
+        </div>
+        <span class="text-2xl">🛒</span>
+      </a>
+
+      <a href="https://www.tokopedia.com/" target="_blank"
+        class="btn-link glass flex items-center justify-between p-5 rounded-2xl shadow-lg">
+        <div>
+          <h2 class="font-semibold text-lg">Tokopedia Store</h2>
+          <p class="text-sm text-blue-100">Belanja langsung di Tokopedia</p>
+        </div>
+        <span class="text-2xl">🟢</span>
+      </a>
+
+      <a href="https://www.tiktok.com/" target="_blank"
+        class="btn-link glass flex items-center justify-between p-5 rounded-2xl shadow-lg">
+        <div>
+          <h2 class="font-semibold text-lg">TikTok Shop</h2>
+          <p class="text-sm text-blue-100">Lihat video & checkout produk</p>
+        </div>
+        <span class="text-2xl">🎵</span>
+      </a>
+
+      <a href="https://wa.me/6283847379009" target="_blank"
+        class="btn-link glass flex items-center justify-between p-5 rounded-2xl shadow-lg">
+        <div>
+          <h2 class="font-semibold text-lg">WhatsApp Admin</h2>
+          <p class="text-sm text-blue-100">Chat langsung dengan admin</p>
+        </div>
+        <span class="text-2xl">💬</span>
+      </a>
+
+      <a href="https://facebook.com/" target="_blank"
+        class="btn-link glass flex items-center justify-between p-5 rounded-2xl shadow-lg">
+        <div>
+          <h2 class="font-semibold text-lg">Facebook Page</h2>
+          <p class="text-sm text-blue-100">Lihat update terbaru toko</p>
+        </div>
+        <span class="text-2xl">📘</span>
+      </a>
+
+    </div>
+
+    <!-- TESTIMONI -->
+    <div class="mt-14">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="text-2xl font-bold">Testimoni Customer</h2>
+        <span class="text-sm text-blue-100">Tambahkan foto sendiri</span>
+      </div>
+
+      <div class="gallery grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://www.image2url.com/r2/default/images/1779771232956-0cac1bb6-f9f5-4df6-bc53-c08e9a10a4e8.jpg" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/400x400" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/400x400" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/400x400" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/400x400" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/400x400" class="rounded-2xl object-cover shadow-lg" />
+      </div>
+    </div>
+
+    <!-- PRODUK -->
+    <div class="mt-14">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="text-2xl font-bold">Foto Produk</h2>
+        <span class="text-sm text-blue-100">Tambahkan produk terbaik</span>
+      </div>
+
+      <div class="gallery grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://via.placeholder.com/500x500" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/500x500" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/500x500" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/500x500" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/500x500" class="rounded-2xl object-cover shadow-lg" />
+        <img src="https://via.placeholder.com/500x500" class="rounded-2xl object-cover shadow-lg" />
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="text-center mt-16 text-blue-100 text-sm">
+      <p>© 2026 Nama Toko Anda • Semua Hak Dilindungi</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
